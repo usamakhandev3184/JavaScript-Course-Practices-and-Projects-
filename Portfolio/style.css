@@ -1,0 +1,236 @@
+@import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap)');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.logo span {
+  color: #00bcd4;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: #00bcd4;
+}
+
+.mobile-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== HOME ===== */
+.home {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('[images.unsplash.com](https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600)') center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+}
+.home-content h1 span {
+  color: #00bcd4;
+}
+.home-content p {
+  margin: 15px 0 30px;
+  max-width: 600px;
+}
+
+.btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #0199b7;
+}
+
+/* ===== SECTIONS COMMON ===== */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  background: #fff;
+  padding: 80px 10%;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.about-container img {
+  width: 280px;
+  border-radius: 50%;
+}
+.about-text {
+  max-width: 500px;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  background: #f4f4f4;
+  padding: 80px 10%;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+  background: #fff;
+  padding: 80px 10%;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+.project-card {
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.project-info {
+  padding: 20px;
+}
+.project-info h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  padding: 80px 10%;
+  background: #f4f4f4;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact-form textarea {
+  min-height: 120px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    right: 10%;
+    top: 60px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .navbar ul.show {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: block;
+    color: #fff;
+  }
+}

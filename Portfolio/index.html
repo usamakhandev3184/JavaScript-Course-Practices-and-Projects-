@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo">Usama<span>Khan</span></div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-toggle" id="mobile-toggle">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Usama Khan</span></h1>
+      <p>Creative Web Developer & UI Designer passionate about building beautiful, functional websites.</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.jpg.jpeg" alt="Profile" />
+      <div class="about-text">
+        <p>I'm a full‑stack developer with a focus on front‑end technologies like React and backend stacks like Node.js.</p>
+        <p>I create responsive, user‑focused websites with modern aesthetics and accessibility in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">React.js</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">Git / GitHub</div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg.jpg" alt="Portfolio Site" />
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio to showcase projects, skills, and contact information.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg.jpg" alt="To-Do App" />
+        <div class="project-info">
+          <h3>To‑Do App</h3>
+          <p>Task tracker application with local storage functionality and a responsive interface.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project3.jpg.jpg" alt="E-commerce Demo" />
+        <div class="project-info">
+          <h3>E‑Commerce Demo</h3>
+          <p>Mock online store demonstrating product filtering and interactive cart system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 Usama Khan. Built with ❤️ using HTML, CSS & JS.</p>
+  </footer>
+</body>
+</html>
